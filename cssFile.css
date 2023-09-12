@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+  }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(219, 159, 5);
+    
+    background-image: linear-gradient(180deg, #a746e7 0, #772bd6 25%, #2d07c0 50%, #0000ab 75%, #00009a 100%);
+      
+    overflow: hidden;
+}
+
+.burbujas {
+    position: relative;
+    display: flex;
+}
+
+.burbujas span {
+    position: relative;
+    color: rgb(243, 245, 243);
+  
+   font-size: 80px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 15px;
+   
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.burbujas span:nth-child(even) {
+    
+    color: rgb(232, 233, 231);
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0.5);
+    }
+}
+
+.INFO {
+   overflow: hidden;
+    display: grid;
+    grid-template-columns: 53.1rem auto;
+    position: absolute;
+    border: white solid 2px;
+    width: 1000px;
+    height: 500px;
+    margin-top: 13%;
+    margin-left: 22%;
+}
+
+.INFO img {
+    
+}
+
+.imagen {
+    width: 150px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.distribucionInfo {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.nombre {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.experienciaYestudios {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
